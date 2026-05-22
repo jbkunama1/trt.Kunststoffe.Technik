@@ -6,9 +6,7 @@
 ![Bildungsplan](https://img.shields.io/badge/Bildungsplan-BW_2016-9b59b6.svg)
 
 ---
-
-## 🛠️ Projekt-Logo
-<img src="Logo_Kunststoff.png" alt="KunststoffLogo" width="300">
+<center><img src="Logo_Kunststoff.png" alt="KunststoffLogo" width="300"></center>
 ---
 
 ## 🎯 Kurzbeschreibung
