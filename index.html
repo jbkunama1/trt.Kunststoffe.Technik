@@ -143,6 +143,20 @@
       margin: 0;
     }
 
+    .card-content {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .card-content div {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .card-content div:last-child {
+      margin-bottom: 0;
+    }
+
     ul, ol {
       margin: 0.8rem 0;
       padding-left: 1.5rem;
@@ -213,6 +227,15 @@
       font-size: 0.95rem;
       line-height: 2.2;
       text-align: center;
+    }
+
+    .process-step {
+      margin: 0.8rem 0;
+    }
+
+    .process-separator {
+      margin: 0.6rem 0;
+      font-size: 1.2rem;
     }
 
     .video-list {
@@ -391,8 +414,7 @@
       <ul>
         <li><strong>Kunststoff</strong> ist ein <strong>künstlich hergestellter Stoff</strong>, der meistens aus <strong>Erdöl</strong> gemacht wird.</li>
         <li>Aus dem Erdöl gewinnt man kleine Bausteine, aus denen in der Chemie <strong>lange Ketten (Polymere)</strong> entstehen.</li>
-        <li>Diese Kunststoffe kann man <strong>leicht formen</strong>, <strong>einfärben</strong> und für sehr viele Produkte nutzen:<br>
-            z. B. Flaschen, Tüten, Spielzeug, Gehäuse, Folien.</li>
+        <li>Diese Kunststoffe kann man <strong>leicht formen</strong>, <strong>einfärben</strong> und für sehr viele Produkte nutzen: z. B. Flaschen, Tüten, Spielzeug, Gehäuse, Folien.</li>
       </ul>
     </section>
 
@@ -402,12 +424,17 @@
       <h3>Vereinfachte Prozesskette</h3>
       
       <div class="process-flow">
-        <strong>Erdöl (aus der Erde)</strong><br>⬇️<br>
-        <strong>Raffinerie</strong> (Trennung in verschiedene Bestandteile)<br>⬇️<br>
-        <strong>Chemische Reaktionen</strong> (Polymerisation → lange Ketten)<br>⬇️<br>
-        <strong>Kunststoffgranulat</strong> (kleine Kügelchen)<br>⬇️<br>
-        <strong>Formgebung</strong> (z. B. Spritzguss, Blasformen)<br>⬇️<br>
-        <strong>Fertige Produkte</strong> (Flaschen, Folien, Gehäuse, Fasern)
+        <div class="process-step"><strong>Erdöl (aus der Erde)</strong></div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Raffinerie</strong> (Trennung in verschiedene Bestandteile)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Chemische Reaktionen</strong> (Polymerisation → lange Ketten)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Kunststoffgranulat</strong> (kleine Kügelchen)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Formgebung</strong> (z. B. Spritzguss, Blasformen)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Fertige Produkte</strong> (Flaschen, Folien, Gehäuse, Fasern)</div>
       </div>
 
       <h3>Ablauf im Detail:</h3>
@@ -425,34 +452,34 @@
       <div class="grid">
         <div class="card">
           <div class="card-title">Einstieg (3–4 Min.)</div>
-          <p class="card-text">
-            <strong>Methode:</strong> „Kunststoff-Kiste" mit Alltagsgegenständen, Rätsel: „Was haben alle gemeinsam?"<br>
-            <strong>Ziel:</strong> Interesse wecken, Vorwissen aktivieren
-          </p>
+          <div class="card-content">
+            <div><strong>Methode:</strong> „Kunststoff-Kiste" mit Alltagsgegenständen, Rätsel: „Was haben alle gemeinsam?"</div>
+            <div><strong>Ziel:</strong> Interesse wecken, Vorwissen aktivieren</div>
+          </div>
         </div>
 
         <div class="card">
           <div class="card-title">Begriffsfindung (4–5 Min.)</div>
-          <p class="card-text">
-            <strong>Methode:</strong> Think-Pair-Share + Plenum<br>
-            <strong>Ziel:</strong> Alltagsdefinition erarbeiten
-          </p>
+          <div class="card-content">
+            <div><strong>Methode:</strong> Think-Pair-Share + Plenum</div>
+            <div><strong>Ziel:</strong> Alltagsdefinition erarbeiten</div>
+          </div>
         </div>
 
         <div class="card">
           <div class="card-title">Input „Vom Erdöl zum Kunststoff" (7–8 Min.)</div>
-          <p class="card-text">
-            <strong>Methode:</strong> Kurzvortrag mit Skizzen<br>
-            <strong>Ziel:</strong> Prozesskette verstehen
-          </p>
+          <div class="card-content">
+            <div><strong>Methode:</strong> Kurzvortrag mit Skizzen</div>
+            <div><strong>Ziel:</strong> Prozesskette verstehen</div>
+          </div>
         </div>
 
         <div class="card">
           <div class="card-title">Sicherung (4–5 Min.)</div>
-          <p class="card-text">
-            <strong>Methode:</strong> Heftaufgabe + Präsentation<br>
-            <strong>Ziel:</strong> Kerngedanken sichern
-          </p>
+          <div class="card-content">
+            <div><strong>Methode:</strong> Heftaufgabe + Präsentation</div>
+            <div><strong>Ziel:</strong> Kerngedanken sichern</div>
+          </div>
         </div>
       </div>
     </section>
