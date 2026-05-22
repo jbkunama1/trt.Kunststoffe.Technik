@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kunststoffe Technik – Infografiken</title>
-  <meta name="description" content="Infografiken zum Thema Kunststoffe für den Einsatz in Unterricht und GitHub Pages." />
+  <title>🧪 TECH-PLASTIX – Kunststoffe Technik Klasse 6</title>
+  <meta name="description" content="Unterrichtseinheit zum Thema Kunststoffe für Klasse 6 – 20-minütiger Einstieg in Erdöl, Kunststoffherstellung und Umweltfolgen." />
   <style>
     :root {
       color-scheme: light;
@@ -13,32 +13,38 @@
       --text: #1f2937;
       --muted: #6b7280;
       --accent: #2563eb;
+      --accent-light: #3b82f6;
       --border: #e5e7eb;
+      --success: #10b981;
     }
 
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .container {
-      width: min(1100px, 92vw);
+      width: min(1200px, 92vw);
       margin: 0 auto;
       padding: 2rem 0 3rem;
     }
 
     header {
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--border);
     }
 
     header img {
-      max-width: 220px;
+      max-width: 200px;
       height: auto;
       display: block;
       margin: 0 auto 1rem;
@@ -46,18 +52,68 @@
 
     h1 {
       margin: 0 0 0.5rem;
-      font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--text);
+    }
+
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 0.7rem;
+      margin-top: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
     }
 
     .subtitle {
-      margin: 0;
+      margin: 1rem 0 0;
       color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h3 {
+      margin: 1.2rem 0 0.6rem;
+      color: var(--text);
+      font-size: 1.1rem;
+    }
+
+    .intro-text {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
       margin-top: 1.5rem;
     }
 
@@ -65,43 +121,219 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 0.9rem;
+      padding: 1.2rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      transition: all 0.2s ease;
     }
 
-    .card a {
-      color: inherit;
-      text-decoration: none;
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: var(--accent);
     }
 
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #fff;
+    .card-title {
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
     }
 
-    .caption {
-      margin: 0.7rem 0 0.2rem;
+    .card-text {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .card-content {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .card-content div {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .card-content div:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin: 0.8rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    strong {
+      color: var(--text);
       font-weight: 600;
     }
 
+    .cta-link {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+
+    .cta-link:hover {
+      background: var(--accent-light);
+    }
+
+    .learning-goals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .goal-card {
+      background: #f0f9ff;
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: 6px;
+    }
+
+    .goal-title {
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .goal-text {
+      font-size: 0.95rem;
+      margin: 0;
+      color: var(--text);
+    }
+
+    .process-flow {
+      background: #f3f4f6;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      line-height: 2.2;
+      text-align: center;
+    }
+
+    .process-step {
+      margin: 0.8rem 0;
+    }
+
+    .process-separator {
+      margin: 0.6rem 0;
+      font-size: 1.2rem;
+    }
+
+    .video-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+
+    .video-item {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .video-item:last-child {
+      border-bottom: none;
+    }
+
+    .video-title {
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .video-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0.3rem 0 0.5rem;
+    }
+
     footer {
-      margin-top: 2rem;
+      margin-top: 3rem;
+      padding-top: 2rem;
       text-align: center;
       color: var(--muted);
       font-size: 0.9rem;
+      border-top: 2px solid var(--border);
     }
 
     .link {
       color: var(--accent);
       text-decoration: none;
+      font-weight: 500;
     }
 
     .link:hover {
       text-decoration: underline;
+    }
+
+    .metadata {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .card-support {
+      border-left: 4px solid var(--success);
+    }
+
+    .card-support .card-title {
+      color: var(--success);
+    }
+
+    .card-advanced {
+      border-left: 4px solid var(--accent);
+    }
+
+    .intro-text-large {
+      margin-bottom: 1rem;
+    }
+
+    .card-list {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+    }
+
+    .footer-note {
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem 0 2rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .learning-goals {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -109,42 +341,243 @@
   <main class="container">
     <header>
       <img src="./Logo_Kunststoff.png" alt="Logo Kunststoffe" />
-      <h1>Infografiken: Kunststoffe Technik</h1>
-      <p class="subtitle">Übersicht der im Repository enthaltenen Grafiken für GitHub Pages.</p>
+      <h1>🧪 TECH-PLASTIX – Kunststoffe Technik</h1>
+      <p class="subtitle">Einstieg in das Thema Kunststoffe – Klasse 6, Technik</p>
+      
+      <div class="badges">
+        <span class="badge">✓ Klasse 6</span>
+        <span class="badge">Fach: Technik</span>
+        <span class="badge">Dauer: 20 Min.</span>
+        <span class="badge">BW 2016</span>
+      </div>
     </header>
 
-    <section class="grid" aria-label="Infografik-Galerie">
-      <article class="card">
-        <a href="./Kunststoff__Vom_Erdöl_zum_Alltag.png" target="_blank" rel="noopener noreferrer" aria-label="Infografik Kunststoff – Vom Erdöl zum Alltag in voller Größe öffnen">
-          <img src="./Kunststoff__Vom_Erdöl_zum_Alltag.png" alt="Infografik: Vom Erdöl zum Alltag" />
-          <p class="caption">Kunststoff – Vom Erdöl zum Alltag</p>
-        </a>
-      </article>
+    <!-- Kurzbeschreibung -->
+    <section class="section">
+      <h2>🎯 Kurzbeschreibung</h2>
+      <p class="intro-text">
+        Diese <strong>Unterrichtseinheit ist ein 20-minütiger Einstieg</strong> in das Thema <strong>Kunststoffe</strong> 
+        im Fach <strong>Technik</strong>, Klasse 6, an der Gemeinschaftsschule in Baden-Württemberg.
+      </p>
+      <p class="intro-text-large">
+        Sie orientiert sich am <strong>Bildungsplan 2016 Sekundarstufe I</strong> und vermittelt grundlegende Werkstoffe, 
+        ihre Eigenschaften und Technikfolgen.
+      </p>
+      
+      <h3>Im Mittelpunkt stehen drei zentrale Fragen:</h3>
+      <ul>
+        <li><strong>Was ist Kunststoff?</strong></li>
+        <li><strong>Wie entsteht Kunststoff</strong> grob „vom Erdöl zum Produkt"?</li>
+        <li><strong>Welche Chancen und Probleme</strong> bringt der Einsatz von Kunststoffen mit sich?</li>
+      </ul>
+    </section>
 
-      <article class="card">
-        <a href="./Kunststoff__Produktion_und_Umweltfolgen.png" target="_blank" rel="noopener noreferrer" aria-label="Infografik Kunststoff – Produktion und Umweltfolgen in voller Größe öffnen">
-          <img src="./Kunststoff__Produktion_und_Umweltfolgen.png" alt="Infografik: Produktion und Umweltfolgen" />
-          <p class="caption">Kunststoff – Produktion und Umweltfolgen</p>
-        </a>
-      </article>
+    <!-- Lernziele -->
+    <section class="section">
+      <h2>🧩 Lernziele (Kompetenzen)</h2>
+      <p>Die Schülerinnen und Schüler können nach dieser Einheit:</p>
+      
+      <div class="learning-goals">
+        <div class="goal-card">
+          <div class="goal-title">K1 – Begriffsklärung</div>
+          <p class="goal-text">
+            In eigenen Worten erklären, was Kunststoff ist, und mindestens zwei Alltagsbeispiele benennen.
+          </p>
+        </div>
+        
+        <div class="goal-card">
+          <div class="goal-title">K2 – Prozesskette</div>
+          <p class="goal-text">
+            Den groben Weg „Erdöl → Raffinerie → Kunststoffgranulat → Produkt" in einer einfachen Skizze darstellen.
+          </p>
+        </div>
+        
+        <div class="goal-card">
+          <div class="goal-title">K3 – Chancen/Probleme</div>
+          <p class="goal-text">
+            Mindestens eine vorteilhafte und eine problematische Eigenschaft von Kunststoffen nennen.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <article class="card">
-        <a href="./Vom_Erdöl_zum_Kunststoff.png" target="_blank" rel="noopener noreferrer" aria-label="Infografik Vom Erdöl zum Kunststoff in voller Größe öffnen">
-          <img src="./Vom_Erdöl_zum_Kunststoff.png" alt="Infografik: Vom Erdöl zum Kunststoff" />
-          <p class="caption">Vom Erdöl zum Kunststoff</p>
-        </a>
-      </article>
+    <!-- Was ist Kunststoff -->
+    <section class="section">
+      <h2>🧬 Was ist Kunststoff?</h2>
+      <h3>Schülergerechte Erklärung</h3>
+      <ul>
+        <li><strong>Kunststoff</strong> ist ein <strong>künstlich hergestellter Stoff</strong>, der meistens aus <strong>Erdöl</strong> gemacht wird.</li>
+        <li>Aus dem Erdöl gewinnt man kleine Bausteine, aus denen in der Chemie <strong>lange Ketten (Polymere)</strong> entstehen.</li>
+        <li>Diese Kunststoffe kann man <strong>leicht formen</strong>, <strong>einfärben</strong> und für sehr viele Produkte nutzen: z. B. Flaschen, Tüten, Spielzeug, Gehäuse, Folien.</li>
+      </ul>
+    </section>
 
-      <article class="card">
-        <a href="./Logo_Kunststoff.png" target="_blank" rel="noopener noreferrer" aria-label="Logo Kunststoffe in voller Größe öffnen">
-          <img src="./Logo_Kunststoff.png" alt="Logo Kunststoffe" />
-          <p class="caption">Logo Kunststoffe</p>
-        </a>
-      </article>
+    <!-- Vom Erdöl zum Kunststoff -->
+    <section class="section">
+      <h2>🛢️ Vom Erdöl zum Kunststoff</h2>
+      <h3>Vereinfachte Prozesskette</h3>
+      
+      <div class="process-flow">
+        <div class="process-step"><strong>Erdöl (aus der Erde)</strong></div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Raffinerie</strong> (Trennung in verschiedene Bestandteile)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Chemische Reaktionen</strong> (Polymerisation → lange Ketten)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Kunststoffgranulat</strong> (kleine Kügelchen)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Formgebung</strong> (z. B. Spritzguss, Blasformen)</div>
+        <div class="process-separator">⬇️</div>
+        <div class="process-step"><strong>Fertige Produkte</strong> (Flaschen, Folien, Gehäuse, Fasern)</div>
+      </div>
+
+      <h3>Ablauf im Detail:</h3>
+      <ul>
+        <li>Erdöl wird in <strong>Raffinerien</strong> in verschiedene Bestandteile getrennt.</li>
+        <li>Aus geeigneten Bestandteilen werden durch chemische Reaktionen <strong>große Moleküle (Polymere)</strong> aufgebaut – das sind die „Bausteine" der Kunststoffe.</li>
+        <li>Das Ergebnis ist oft <strong>Kunststoffgranulat</strong>, das eingeschmolzen und zu Produkten geformt wird.</li>
+      </ul>
+    </section>
+
+    <!-- Stundenablauf -->
+    <section class="section">
+      <h2>🕒 Verlaufsplan – 20 Minuten</h2>
+      
+      <div class="grid">
+        <div class="card">
+          <div class="card-title">Einstieg (3–4 Min.)</div>
+          <div class="card-content">
+            <div><strong>Methode:</strong> „Kunststoff-Kiste" mit Alltagsgegenständen, Rätsel: „Was haben alle gemeinsam?"</div>
+            <div><strong>Ziel:</strong> Interesse wecken, Vorwissen aktivieren</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Begriffsfindung (4–5 Min.)</div>
+          <div class="card-content">
+            <div><strong>Methode:</strong> Think-Pair-Share + Plenum</div>
+            <div><strong>Ziel:</strong> Alltagsdefinition erarbeiten</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Input „Vom Erdöl zum Kunststoff" (7–8 Min.)</div>
+          <div class="card-content">
+            <div><strong>Methode:</strong> Kurzvortrag mit Skizzen</div>
+            <div><strong>Ziel:</strong> Prozesskette verstehen</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Sicherung (4–5 Min.)</div>
+          <div class="card-content">
+            <div><strong>Methode:</strong> Heftaufgabe + Präsentation</div>
+            <div><strong>Ziel:</strong> Kerngedanken sichern</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differenzierung -->
+    <section class="section">
+      <h2>🎓 Differenzierung</h2>
+      
+      <div class="grid">
+        <div class="card card-support">
+          <div class="card-title">🔽 Unterstützung</div>
+          <ul class="card-list">
+            <li>Satzanfänge an der Tafel (z. B. „Kunststoff ist …", „Er wird hergestellt aus …")</li>
+            <li>Vorgezeichnete Prozesskette zum Ergänzen (Lückenschema)</li>
+          </ul>
+        </div>
+
+        <div class="card card-advanced">
+          <div class="card-title">🔼 Forderung</div>
+          <ul class="card-list">
+            <li>Zusatzfrage: „Warum kann es ein Problem sein, dass Kunststoffe so lange haltbar sind?"</li>
+            <li>Transfer: SuS nennen Ideen, wie man Kunststoffe im Alltag einsparen kann</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materialien -->
+    <section class="section">
+      <h2>📚 Materialien</h2>
+      
+      <h3>Für die Lehrkraft:</h3>
+      <ul>
+        <li>Kiste mit typischen Kunststoff-Gegenständen (Flasche, Brotdose, Spielzeug, Verpackung etc.)</li>
+        <li>Tafel/Whiteboard oder digitale Tafel</li>
+        <li>ggf. 1–2 Folien/Slides mit der Prozesskette „Erdöl → Kunststoff"</li>
+      </ul>
+
+      <h3>Für die SuS:</h3>
+      <ul>
+        <li>Heft oder Arbeitsblatt</li>
+        <li>Stifte (für Skizze und Stichworte)</li>
+      </ul>
+    </section>
+
+    <!-- Videos -->
+    <section class="section">
+      <h2>📺 Kurze Erklärvideos (empfohlen)</h2>
+      <p>Diese Videos eignen sich als kurze Impulse oder für die Vertiefung (z. B. Hausaufgabe, zweiter Stundenteil).</p>
+      
+      <ul class="video-list">
+        <li class="video-item">
+          <div class="video-title">1. Checker Tobi – Der Plastik-Check</div>
+          <p class="video-desc">Reportage für Kinder: Wie entsteht Plastik? Welche Probleme macht es in der Umwelt?</p>
+          <a href="https://www.youtube.com/watch?v=lF9RFcKiSCs" target="_blank" rel="noopener noreferrer" class="cta-link">Video ansehen</a>
+        </li>
+
+        <li class="video-item">
+          <div class="video-title">2. ZDF goes Schule – „Alles aus Plastik?!"</div>
+          <p class="video-desc">Sehr kurzer Überblick über Geschichte, Vorteile und Probleme von Plastik</p>
+          <a href="https://schule.zdf.de/video/geschichte-plastik-einfach-erklaert-100" target="_blank" rel="noopener noreferrer" class="cta-link">Video ansehen</a>
+        </li>
+
+        <li class="video-item">
+          <div class="video-title">3. WDR Planet Wissen – „Was ist Plastik?"</div>
+          <p class="video-desc">Grundlagen zu Kunststoffen und ihren Eigenschaften, mit Alltagsbeispielen</p>
+          <a href="https://www1.wdr.de/mediathek/video/sendungen/planet-wissen-swr/video-was-ist-plastik-100.html" target="_blank" rel="noopener noreferrer" class="cta-link">Video ansehen</a>
+        </li>
+
+        <li class="video-item">
+          <div class="video-title">4. Petrochemie: Wie aus Rohöl Kunststoff wird</div>
+          <p class="video-desc">Kurzer Einblick in die Umwandlung von Rohöl zu Kunststoffen</p>
+          <a href="https://www.youtube.com/watch?v=S8YluOEIoXM" target="_blank" rel="noopener noreferrer" class="cta-link">Video ansehen</a>
+        </li>
+
+        <li class="video-item">
+          <div class="video-title">5. Is Plastic Fantastic? – Die Wahrheit über Kunststoff</div>
+          <p class="video-desc">Zeigt Chancen und Risiken des Kunststoffgebrauchs in moderner Gestaltung</p>
+          <a href="https://www.youtube.com/watch?v=nnRyxhwQQv0" target="_blank" rel="noopener noreferrer" class="cta-link">Video ansehen</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Ausblick -->
+    <section class="section">
+      <h2>🌱 Ausblick auf weitere Stunden</h2>
+      <p>Folgende Themen können in den nächsten Stunden vertieft werden:</p>
+      
+      <ul>
+        <li><strong>Eigenschaften von Kunststoffen</strong> (Dichte, Festigkeit, Verformbarkeit, Temperaturverhalten)</li>
+        <li><strong>Kunststoffe und Umwelt</strong> (Plastikmüll, Mikroplastik, Recycling)</li>
+        <li><strong>Werkstoffvergleich</strong> (Kunststoff vs. Holz vs. Metall für ein konkretes Produkt)</li>
+      </ul>
     </section>
 
     <footer>
-      Quelle der Inhalte: Repository <a class="link" href="https://github.com/jbkunama1/trt.Kunststoffe.Technik">trt.Kunststoffe.Technik</a>
+      <div class="metadata">
+        <span>👨‍🏫 Autor: Daniel Lienhard</span>
+        <span>🏫 Schulart: Gemeinschaftsschule Baden-Württemberg</span>
+        <span>📄 Lizenz: MIT</span>
+      </div>
+      <p class="footer-note">
+        📖 Weitere Informationen im Repository: <a class="link" href="https://github.com/jbkunama1/trt.Kunststoffe.Technik">trt.Kunststoffe.Technik</a>
+      </p>
     </footer>
   </main>
 </body>
