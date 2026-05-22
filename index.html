@@ -272,6 +272,31 @@
       color: var(--muted);
     }
 
+    .card-support {
+      border-left: 4px solid var(--success);
+    }
+
+    .card-support .card-title {
+      color: var(--success);
+    }
+
+    .card-advanced {
+      border-left: 4px solid var(--accent);
+    }
+
+    .intro-text-large {
+      margin-bottom: 1rem;
+    }
+
+    .card-list {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+    }
+
+    .footer-note {
+      margin-top: 1rem;
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 1rem 0 2rem;
@@ -315,7 +340,9 @@
       <h2>🎯 Kurzbeschreibung</h2>
       <p class="intro-text">
         Diese <strong>Unterrichtseinheit ist ein 20-minütiger Einstieg</strong> in das Thema <span class="highlight">Kunststoffe</span> 
-        im Fach <strong>Technik</strong>, Klasse 6, an der Gemeinschaftsschule in Baden-Württemberg.<br><br>
+        im Fach <strong>Technik</strong>, Klasse 6, an der Gemeinschaftsschule in Baden-Württemberg.
+      </p>
+      <p class="intro-text-large">
         Sie orientiert sich am <strong>Bildungsplan 2016 Sekundarstufe I</strong> und vermittelt grundlegende Werkstoffe, 
         ihre Eigenschaften und Technikfolgen.
       </p>
@@ -435,17 +462,17 @@
       <h2>🎓 Differenzierung</h2>
       
       <div class="grid">
-        <div class="card" style="border-left: 4px solid var(--success);">
-          <div class="card-title" style="color: var(--success);">🔽 Unterstützung</div>
-          <ul style="margin: 0.5rem 0; padding-left: 1.2rem;">
+        <div class="card card-support">
+          <div class="card-title">🔽 Unterstützung</div>
+          <ul class="card-list">
             <li>Satzanfänge an der Tafel (z. B. „Kunststoff ist …", „Er wird hergestellt aus …")</li>
             <li>Vorgezeichnete Prozesskette zum Ergänzen (Lückenschema)</li>
           </ul>
         </div>
 
-        <div class="card" style="border-left: 4px solid var(--accent);">
+        <div class="card card-advanced">
           <div class="card-title">🔼 Forderung</div>
-          <ul style="margin: 0.5rem 0; padding-left: 1.2rem;">
+          <ul class="card-list">
             <li>Zusatzfrage: „Warum kann es ein Problem sein, dass Kunststoffe so lange haltbar sind?"</li>
             <li>Transfer: SuS nennen Ideen, wie man Kunststoffe im Alltag einsparen kann</li>
           </ul>
@@ -527,7 +554,7 @@
         <span>🏫 Schulart: Gemeinschaftsschule Baden-Württemberg</span>
         <span>📄 Lizenz: MIT</span>
       </div>
-      <p style="margin-top: 1rem;">
+      <p class="footer-note">
         📖 Weitere Informationen im Repository: <a class="link" href="https://github.com/jbkunama1/trt.Kunststoffe.Technik">trt.Kunststoffe.Technik</a>
       </p>
     </footer>
