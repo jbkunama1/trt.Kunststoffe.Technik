@@ -8,18 +8,7 @@
 ---
 
 ## 🛠️ Projekt-Logo
-
-```text
-████████████████████████████
-█                          █
-█   TECH – PLASTIX  🧴     █
-█  KUNSTSTOFFE IN KL. 6    █
-█                          █
-████████████████████████████
-```
-
-Ein schlichtes Text-Logo für das Repo. Du kannst es später durch ein echtes Bild ersetzen.
-
+<img src="Logo_Kunststoff.png" alt="KunststoffLogo" width="300">
 ---
 
 ## 🎯 Kurzbeschreibung
