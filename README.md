@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-ready-brightgreen.svg)
 ![Klassenstufe](https://img.shields.io/badge/Klasse-6-blue.svg)
 ![Fach](https://img.shields.io/badge/Fach-Technik-orange.svg)
-![Bildungsplan](https://img.shields.io/badge/Bildungsplan-BW_2016-9b59b6.svg)
+![Bildungsplan](https://img.shields.io/badge/Bildungsplan-[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://www.buymeacoffee.com/highfish)BW_2016-9b59b6.svg)
 
 ---
 <center><img src="Logo_Kunststoff.png" alt="KunststoffLogo" width="300"></center>
