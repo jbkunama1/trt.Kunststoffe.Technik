@@ -1,9 +1,9 @@
 # 🧪 TECH-PLASTIX – Einstieg in das Thema Kunststoffe (Klasse 6, Technik)
 
-![Status](https://img.shields.io/badge/status-ready-brightgreen.svg)
-![Klassenstufe](https://img.shields.io/badge/Klasse-6-blue.svg)
-![Fach](https://img.shields.io/badge/Fach-Technik-orange.svg)
-![Bildungsplan](https://img.shields.io/badge/Bildungsplan-BW_2016-9b59b6.svg)
+[![Status](https://img.shields.io/badge/status-ready-brightgreen.svg)](https://github.com/jbkunama1/trt.Kunststoffe.Technik)
+[![Klassenstufe](https://img.shields.io/badge/Klasse-6-blue.svg)](https://github.com/jbkunama1/trt.Kunststoffe.Technik)
+[![Fach](https://img.shields.io/badge/Fach-Technik-orange.svg)](https://github.com/jbkunama1/trt.Kunststoffe.Technik)
+[![Bildungsplan](https://img.shields.io/badge/Bildungsplan-BW_2016-9b59b6.svg)](https://github.com/jbkunama1/trt.Kunststoffe.Technik)
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-☕-yellow.svg)](https://www.buymeacoffee.com/highfish)
 
 ---
